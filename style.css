@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap");
+:root {
+  --color-dark: #596c80;
+  --color-light: #979ea6;
+  --color-blue: #3b7dc5;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: rgb(90, 170, 170);
+  font-family: "Open Sans", sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+/* Main page */
+#home {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: none;
+}
+#home h1 {
+  font-size: 5rem;
+  padding: 2rem;
+}
+.btn-home button {
+  height: 4rem;
+  width: 12rem;
+  margin: 2rem;
+  color: #fff;
+  background: var(--color-dark);
+  border-radius: 15px;
+  box-shadow: #000;
+}
+
+/* game board */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+main h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  display: flex;
+  flex-direction: row;
+}
+#country-flag,
+#country-name {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  flex-direction: row;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  margin: 2rem;
+}
+button {
+  height: 7rem;
+  width: 5rem;
+  margin: 1rem;
+  color: #fff;
+  background: var(--color-dark);
+  border-radius: 15px;
+  box-shadow: #000;
+}
+
+#country-flag h2,
+#country-name h2 {
+  grid-column: 1 / span 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+}
+.points {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  padding: 20px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  background-color: rgb(177, 212, 212);
+}
+button img {
+  height: 5rem;
+  width: 5rem;
+  z-index: -1;
+}
+/* .btn-F2 {
+  background: url("ALogo.png") no-repeat center center/cover;
+} */
